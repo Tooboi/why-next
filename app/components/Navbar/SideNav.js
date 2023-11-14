@@ -1,4 +1,4 @@
-import { RocketLaunchIcon, WrenchScrewdriverIcon, UserGroupIcon, UserIcon, RectangleGroupIcon, PlusIcon } from '@heroicons/react/24/solid';
+import { RocketLaunchIcon, WrenchScrewdriverIcon, UserGroupIcon, UserIcon, RectangleGroupIcon, PlusIcon, ChatBubbleLeftEllipsisIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import Image from 'next/image';
 import { auth } from '@clerk/nextjs';
@@ -16,7 +16,7 @@ const SideNav = () => {
         <div className="px-3 py-3 lg:px-5 lg:pl-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-start">
-            <Link href="/" className="flex ml-2 md:mr-24">
+              <Link href="/" className="flex ml-2 md:mr-24">
                 <Image priority src={LogoOrange} alt="WHY" className="h-10 w-full mr-4" />
               </Link>
             </div>
@@ -60,20 +60,22 @@ const SideNav = () => {
                     <span className="ml-3 group-hover:text-stone-200 ">Discover</span>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/library" className="flex items-center p-2 text-stone-300 rounded-lg hover:bg-stone-600  invisible md:visible group">
                     <RectangleGroupIcon className="h-6 w-6 text-stone-400 group-hover:text-brand-500" />
                     <span className="ml-3 group-hover:text-stone-200 ">Library</span>
                   </Link>
-                </li>
+                </li> */}
                 <li>
-                  <button
-                    type="button"
-                    class="w-full px-2 py-2 text-brand-300 inline-flex items-center bg-transparent hover:bg-brand-500 border border-brand-400 hover:border-brand-500 active:border-brand-600 focus:ring-0 active:outline-none active:bg-brand-600 rounded-lg text-center group transition"
-                  >
-                    <PlusIcon className="h-6 w-6 text-brand-300 group-hover:text-stone-100 group-active:text-stone-200" />
-                    <span className="ml-3 group-hover:text-stone-100 group-active:text-stone-200">Upload</span>
-                  </button>
+                  <Link href='/contact'>
+                    <button
+                      type="button"
+                      class="w-full px-2 py-2 text-brand-300 inline-flex items-center bg-transparent hover:bg-brand-500 border border-brand-400 hover:border-brand-500 active:border-brand-600 focus:ring-0 active:outline-none active:bg-brand-600 rounded-lg text-center group transition"
+                    >
+                      <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-brand-300 group-hover:text-stone-100 group-active:text-stone-200" />
+                      <span className="ml-3 group-hover:text-stone-100 group-active:text-stone-200">Contact</span>
+                    </button>
+                  </Link>
                 </li>
               </ul>
               <ul className="space-y-2 font-medium md:hidden block">
@@ -82,11 +84,11 @@ const SideNav = () => {
                     <RocketLaunchIcon className="h-6 w-6 text-stone-400 group-hover:text-brand-500" />
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/library" className="flex items-center p-2 text-stone-300 rounded-lg dark:text-white hover:bg-stone-600 dark:hover:bg-stone-700 group">
                     <RectangleGroupIcon className="h-6 w-6 text-stone-400 group-hover:text-brand-500" />
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <button
                     type="button"

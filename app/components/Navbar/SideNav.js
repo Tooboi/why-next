@@ -70,7 +70,7 @@ const SideNav = () => {
                   <Link href='/contact'>
                     <button
                       type="button"
-                      class="w-full px-2 py-2 text-brand-300 inline-flex items-center bg-transparent hover:bg-brand-500 border border-brand-400 hover:border-brand-500 active:border-brand-600 focus:ring-0 active:outline-none active:bg-brand-600 rounded-lg text-center group transition"
+                      className="w-full px-2 py-2 text-brand-300 inline-flex items-center bg-transparent hover:bg-brand-500 border border-brand-400 hover:border-brand-500 active:border-brand-600 focus:ring-0 active:outline-none active:bg-brand-600 rounded-lg text-center group transition"
                     >
                       <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-brand-300 group-hover:text-stone-100 group-active:text-stone-200" />
                       <span className="ml-3 group-hover:text-stone-100 group-active:text-stone-200">Contact</span>
@@ -92,7 +92,7 @@ const SideNav = () => {
                 <li>
                   <button
                     type="button"
-                    class="w-full px-2 py-2 text-brand-300 inline-flex items-center bg-transparent hover:bg-brand-500 border border-brand-400 hover:border-brand-500 active:border-brand-600 focus:ring-0 active:outline-none active:bg-brand-600 rounded-lg text-center group transition"
+                    className="w-full px-2 py-2 text-brand-300 inline-flex items-center bg-transparent hover:bg-brand-500 border border-brand-400 hover:border-brand-500 active:border-brand-600 focus:ring-0 active:outline-none active:bg-brand-600 rounded-lg text-center group transition"
                   >
                     <PlusIcon className="h-6 w-6 text-brand-300 group-hover:text-stone-100 group-active:text-stone-200" />
                   </button>

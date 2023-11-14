@@ -1,6 +1,5 @@
 'use client';
-import { useState } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
 
 const ContactPage = () => {
   const [name, setName] = useState('');
@@ -10,7 +9,7 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => { 
     e.preventDefault()
-    console.log('Sending')
+    console.log('\u001b[36mSending...')
   let data = {
       name,
       email,
@@ -24,9 +23,9 @@ const ContactPage = () => {
       },
       body: JSON.stringify(data)
     }).then((res) => {
-      console.log('Response received')
+      console.log('\u001b[35mResponse received')
       if (res.status === 200) {
-        console.log('Response succeeded!')
+        console.log('\u001b[32mResponse succeeded!')
         setSubmitted(true)
         setName('')
         setEmail('')
@@ -41,25 +40,25 @@ const ContactPage = () => {
       {/* <p className='mb-5'>Health Coaching for you</p>
         <p>ACE Certified Health Coach</p> */}
       <form>
-        <div class="mb-6">
-          <label for="name" class="block mb-2 text-sm font-medium text-stone-100">
+        <div className="mb-6">
+          <label for="name" className="block mb-2 text-sm font-medium text-stone-100">
             Name
           </label>
-          <input type="name" id="name" class="shadow-sm bg-stone-50 border border-stone-300 text-stone-900 text-sm rounded-lg focus:ring-brand-500 focus:border-brand-500 block w-full p-2.5" placeholder="Jane Doe" required onChange={(e)=>{setName(e.target.value)}} name='name'></input>
+          <input type="name" id="name" className="shadow-sm bg-stone-50 border border-stone-300 text-stone-900 text-sm rounded-lg focus:ring-brand-500 focus:border-brand-500 block w-full p-2.5" placeholder="Jane Doe" required onChange={(e)=>{setName(e.target.value)}} name='name'></input>
         </div>
-        <div class="mb-6">
-          <label for="email" class="block mb-2 text-sm font-medium text-stone-100 dark:text-white">
+        <div className="mb-6">
+          <label for="email" className="block mb-2 text-sm font-medium text-stone-100 dark:text-white">
             Email
           </label>
-          <input type="email" id="email" class="shadow-sm bg-stone-50 border border-stone-300 text-stone-900 text-sm rounded-lg focus:ring-brand-500 focus:border-brand-500 block w-full p-2.5 " placeholder="Jane@gmail.com" required onChange={(e)=>{setEmail(e.target.value)}} name='email'></input>
+          <input type="email" id="email" className="shadow-sm bg-stone-50 border border-stone-300 text-stone-900 text-sm rounded-lg focus:ring-brand-500 focus:border-brand-500 block w-full p-2.5 " placeholder="Jane@gmail.com" required onChange={(e)=>{setEmail(e.target.value)}} name='email'></input>
         </div>
-        <div class="mb-6">
-          <label for="message" class="block mb-2 text-sm font-medium text-stone-100">
+        <div className="mb-6">
+          <label for="message" className="block mb-2 text-sm font-medium text-stone-100">
             Your message
           </label>
-          <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-stone-900 bg-stone-50 rounded-lg border border-stone-300 focus:ring-brand-500 focus:border-brand-500" placeholder="Leave a message..." onChange={(e)=>{setMessage(e.target.value)}} name='message'></textarea>
+          <textarea id="message" rows="4" className="block p-2.5 w-full text-sm text-stone-900 bg-stone-50 rounded-lg border border-stone-300 focus:ring-brand-500 focus:border-brand-500" placeholder="Leave a message..." onChange={(e)=>{setMessage(e.target.value)}} name='message'></textarea>
         </div>
-        <button type="submit" onClick={(e)=>{handleSubmit(e)}} class="text-white bg-brand-700 hover:bg-brand-800 focus:ring-4 focus:outline-none focus:ring-brand-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+        <button type="submit" onClick={(e)=>{handleSubmit(e)}} className="text-white bg-brand-700 hover:bg-brand-800 focus:ring-4 focus:outline-none focus:ring-brand-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
           Send message
         </button>
       </form>

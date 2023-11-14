@@ -17,7 +17,7 @@ const SideNav = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-start">
             <Link href="/" className="flex ml-2 md:mr-24">
-                <Image priority src={LogoOrange} alt="SoundByte" className="h-10 w-full mr-4" />
+                <Image priority src={LogoOrange} alt="WHY" className="h-10 w-full mr-4" />
               </Link>
             </div>
             <div className="flex items-center">
@@ -69,9 +69,9 @@ const SideNav = () => {
                 <li>
                   <button
                     type="button"
-                    class="w-full px-2 py-2 text-amber-300 inline-flex items-center bg-transparent hover:bg-amber-500 border border-amber-400 hover:border-amber-500 active:border-amber-600 focus:ring-0 active:outline-none active:bg-amber-600 rounded-lg text-center group transition"
+                    class="w-full px-2 py-2 text-brand-300 inline-flex items-center bg-transparent hover:bg-brand-500 border border-brand-400 hover:border-brand-500 active:border-brand-600 focus:ring-0 active:outline-none active:bg-brand-600 rounded-lg text-center group transition"
                   >
-                    <PlusIcon className="h-6 w-6 text-amber-300 group-hover:text-stone-100 group-active:text-stone-200" />
+                    <PlusIcon className="h-6 w-6 text-brand-300 group-hover:text-stone-100 group-active:text-stone-200" />
                     <span className="ml-3 group-hover:text-stone-100 group-active:text-stone-200">Upload</span>
                   </button>
                 </li>
@@ -90,9 +90,9 @@ const SideNav = () => {
                 <li>
                   <button
                     type="button"
-                    class="w-full px-2 py-2 text-amber-300 inline-flex items-center bg-transparent hover:bg-amber-500 border border-amber-400 hover:border-amber-500 active:border-amber-600 focus:ring-0 active:outline-none active:bg-amber-600 rounded-lg text-center group transition"
+                    class="w-full px-2 py-2 text-brand-300 inline-flex items-center bg-transparent hover:bg-brand-500 border border-brand-400 hover:border-brand-500 active:border-brand-600 focus:ring-0 active:outline-none active:bg-brand-600 rounded-lg text-center group transition"
                   >
-                    <PlusIcon className="h-6 w-6 text-amber-300 group-hover:text-stone-100 group-active:text-stone-200" />
+                    <PlusIcon className="h-6 w-6 text-brand-300 group-hover:text-stone-100 group-active:text-stone-200" />
                   </button>
                 </li>
               </ul>

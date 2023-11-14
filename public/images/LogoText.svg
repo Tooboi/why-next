@@ -37,6 +37,6 @@
       }
     </style>
   </defs>
-  <text class="cls-5" transform="translate(2.507 85.253)"><tspan class="cls-7" x="0" y="0">H</tspan><tspan x="10.55" y="0">ealth and </tspan><tspan class="cls-6" x="64.343" y="0">W</tspan><tspan x="76.276" y="0">ellness </tspan><tspan class="cls-2" x="115.71" y="0">C</tspan><tspan x="125.33" y="0">oaching</tspan></text>
-  <text class="cls-4" transform="translate(0 65.058)"><tspan class="cls-1" x="0" y="0">W</tspan><tspan class="cls-3" x="68.656" y="0">HY</tspan></text>
+  <text className="cls-5" transform="translate(2.507 85.253)"><tspan className="cls-7" x="0" y="0">H</tspan><tspan x="10.55" y="0">ealth and </tspan><tspan className="cls-6" x="64.343" y="0">W</tspan><tspan x="76.276" y="0">ellness </tspan><tspan className="cls-2" x="115.71" y="0">C</tspan><tspan x="125.33" y="0">oaching</tspan></text>
+  <text className="cls-4" transform="translate(0 65.058)"><tspan className="cls-1" x="0" y="0">W</tspan><tspan className="cls-3" x="68.656" y="0">HY</tspan></text>
 </svg>

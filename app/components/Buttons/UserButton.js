@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default async function Navbar() {
   const { userId } = auth();
   const user = await currentUser();
-  console.log(user);
+  // console.log(user);
 
   return (
     <>

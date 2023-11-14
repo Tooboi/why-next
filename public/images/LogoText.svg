@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.687 94.143">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.003em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.014em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        font-size: 76.539px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #ededed;
+        font-family: BrandonGrotesque-Medium, 'Brandon Grotesque';
+        font-weight: 500;
+      }
+
+      .cls-6 {
+        letter-spacing: -.054em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        font-size: 14.104px;
+      }
+    </style>
+  </defs>
+  <text class="cls-5" transform="translate(2.507 85.253)"><tspan class="cls-7" x="0" y="0">H</tspan><tspan x="10.55" y="0">ealth and </tspan><tspan class="cls-6" x="64.343" y="0">W</tspan><tspan x="76.276" y="0">ellness </tspan><tspan class="cls-2" x="115.71" y="0">C</tspan><tspan x="125.33" y="0">oaching</tspan></text>
+  <text class="cls-4" transform="translate(0 65.058)"><tspan class="cls-1" x="0" y="0">W</tspan><tspan class="cls-3" x="68.656" y="0">HY</tspan></text>
+</svg>

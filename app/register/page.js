@@ -71,19 +71,19 @@ const RegisterPage = () => {
             <label htmlFor="username" className="block mb-2 text-sm font-medium text-stone-400">
               Username
             </label>
-            <input type="text" name="username" id="username" onChange={(e) => setUsername(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-brand-600 focus:border-brand-600 block w-full p-2.5" required={true} />
+            <input type="text" name="username" id="username" onChange={(e) => setUsername(e.target.value)} className="bg-stone-50 border border-stone-300 text-stone-900 sm:text-sm rounded-lg focus:ring-brand-600 focus:border-brand-600 block w-full p-2.5" required={true} />
           </div>
           <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium text-stone-400">
               Email
             </label>
-            <input type="email" name="email" id="email" onChange={(e) => setEmail(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-brand-600 focus:border-brand-600 block w-full p-2.5" placeholder="name@company.com" required={true} />
+            <input type="email" name="email" id="email" onChange={(e) => setEmail(e.target.value)} className="bg-stone-50 border border-stone-300 text-stone-900 sm:text-sm rounded-lg focus:ring-brand-600 focus:border-brand-600 block w-full p-2.5" placeholder="name@company.com" required={true} />
           </div>
           <div>
             <label htmlFor="password" className="block mb-2 text-sm font-medium text-stone-400">
               Password
             </label>
-            <input type="password" name="password" id="password" onChange={(e) => setPassword(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5" required={true} />
+            <input type="password" name="password" id="password" onChange={(e) => setPassword(e.target.value)} className="bg-stone-50 border border-stone-300 text-stone-900 sm:text-sm rounded-lg block w-full p-2.5" required={true} />
           </div>
           <button type="submit" className="w-full text-white bg-brand-600 hover:bg-brand-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
             Create an account
@@ -93,7 +93,7 @@ const RegisterPage = () => {
       {pendingVerification && (
         <div>
           <form className="space-y-4 md:space-y-6">
-            <input value={code} className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5" placeholder="Enter Verification Code..." onChange={(e) => setCode(e.target.value)} />
+            <input value={code} className="bg-stone-50 border border-stone-300 text-stone-900 sm:text-sm rounded-lg block w-full p-2.5" placeholder="Enter Verification Code..." onChange={(e) => setCode(e.target.value)} />
             <button type="submit" onClick={onPressVerify} className="w-full text-white bg-brand-600 hover:bg-brand-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
               Verify Email
             </button>

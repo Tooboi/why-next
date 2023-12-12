@@ -1,10 +1,11 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Rubik } from 'next/font/google';
 import { ClerkProvider } from '@clerk/nextjs';
 import { dark } from '@clerk/themes';
-const inter = Inter({ subsets: ['latin'] });
+const rubik = Rubik({ subsets: ['latin'] });
 
-import SideNav from './components/Navbar/SideNav';
+import Nav from './components/Navbar/Navbar';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'WHY',
@@ -26,13 +27,14 @@ export default function RootLayout({ children }) {
       }}
     >
       <html lang="en" className="bg-stone-900 text-stone-200">
-        <body className={inter.className}>
-          <SideNav />
+        <body className={rubik.className}>
+          <Nav />
           <main className="">
-            <div className="pt-24 pl-24 md:p-8 md:mt-14 md:ml-64 min-h-screen transition-all">
+            <div className="pt-16 p-8 md:mt-16 mt-16 min-h-screen transition-all">
               <div className="">{children}</div>
             </div>
           </main>
+          <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></Script>
         </body>
       </html>
     </ClerkProvider>

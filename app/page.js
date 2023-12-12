@@ -9,14 +9,14 @@ const stats = [
 export default function Home() {
   return (
     <>
-      <h1 className="text-5xl font-bold mb-5 text-center mt-8">WHY with Tammy</h1>
+      <h1 className="text-5xl font-bold mb-5 text-center ">WHY with Tammy</h1>
       <div className="pt-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
             {stats.map((stat) => (
               <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
                 <dt className="text-4xl leading-7">{stat.name}</dt>
-                <dd className="order-first text-4xl font-semibold tracking-tight sm:text-6xl text-brand-500">{stat.value}</dd>
+                <dd className="order-first text-5xl font-semibold tracking-tight sm:text-6xl text-brand-500">{stat.value}</dd>
               </div>
             ))}
           </dl>

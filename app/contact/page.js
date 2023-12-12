@@ -37,9 +37,10 @@ const ContactPage = () => {
   return (
     <>
       <h1 className="text-2xl font-bold mb-5">Contact Me</h1>
+      <h1 className='text-xl'>wholehealthyyounj@gmail.com</h1>
       {/* <p className='mb-5'>Health Coaching for you</p>
         <p>ACE Certified Health Coach</p> */}
-      <form onSubmit={(e) => { e.preventDefault(); handleSubmit(e);}}>
+      {/* <form onSubmit={(e) => { e.preventDefault(); handleSubmit(e);}}>
         <div className="mb-6">
           <label for="name" className="block mb-2 text-sm font-medium text-stone-100">
             Name
@@ -61,7 +62,7 @@ const ContactPage = () => {
         <button type="submit" onClick={(e)=>{handleSubmit(e)}} className="text-white bg-brand-700 hover:bg-brand-800 focus:ring-4 focus:outline-none focus:ring-brand-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
           Send message
         </button>
-      </form>
+      </form> */}
     </>
   );
 };

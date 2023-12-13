@@ -36,8 +36,8 @@ const ContactPage = () => {
 
   return (
     <>
-      <h1 className="text-2xl font-bold mb-5">Contact Me</h1>
-      <h1 className='text-xl'>wholehealthyyounj@gmail.com</h1>
+      <h1 className="text-2xl font-bold mb-5 text-center">Contact Me</h1>
+      <h1 className='text-xl text-center'>wholehealthyyounj@gmail.com</h1>
       {/* <p className='mb-5'>Health Coaching for you</p>
         <p>ACE Certified Health Coach</p> */}
       {/* <form onSubmit={(e) => { e.preventDefault(); handleSubmit(e);}}>
